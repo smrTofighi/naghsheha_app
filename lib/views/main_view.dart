@@ -4,11 +4,12 @@ import 'package:get/get.dart';
 import 'package:naghsheha_app/constant/Strings.dart';
 import 'package:naghsheha_app/constant/colors.dart';
 import 'package:naghsheha_app/views/home_view.dart';
+import 'package:naghsheha_app/views/login_view.dart';
 import 'package:naghsheha_app/views/profile_view.dart';
 
 class MainView extends StatelessWidget {
   MainView({super.key});
-  RxInt selectedIndex = 1.obs;
+  RxInt selectedIndex = 0.obs;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +50,9 @@ class MainView extends StatelessWidget {
                 Icons.person,
                 color: SolidColors.themeColor,
               ),
-              onTap: () {},
+              onTap: () {
+                Get.to(const LoginView());
+              },
             ),
             const Divider(
               color: SolidColors.themeColor,
