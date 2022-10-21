@@ -4,8 +4,10 @@ import 'package:get/get.dart';
 import 'package:naghsheha_app/constant/Strings.dart';
 import 'package:naghsheha_app/constant/colors.dart';
 import 'package:naghsheha_app/views/home_view.dart';
-import 'package:naghsheha_app/views/login_view.dart';
 import 'package:naghsheha_app/views/profile_view.dart';
+import 'package:naghsheha_app/views/request_view.dart';
+
+import '../constant/components.dart';
 
 class MainView extends StatelessWidget {
   MainView({super.key});
@@ -36,103 +38,11 @@ class MainView extends StatelessWidget {
     );
   }
 
-  Drawer drawerApp() {
-    return Drawer(
-      child: SafeArea(
-        child: Column(
-          children: [
-            ListTile(
-              title: const Align(
-                alignment: Alignment.centerRight,
-                child: Text('ورود'),
-              ),
-              leading: const Icon(
-                Icons.person,
-                color: SolidColors.themeColor,
-              ),
-              onTap: () {
-                Get.to(const LoginView());
-              },
-            ),
-            const Divider(
-              color: SolidColors.themeColor,
-              thickness: 1,
-            ),
-            ListTile(
-              title: const Align(
-                alignment: Alignment.centerRight,
-                child: Text('ماشین حساب'),
-              ),
-              leading: const Icon(
-                Icons.calculate,
-                color: SolidColors.themeColor,
-              ),
-              onTap: () {},
-            ),
-            ListTile(
-              title: const Align(
-                alignment: Alignment.centerRight,
-                child: Text('درخواست نقشه'),
-              ),
-              leading: const Icon(
-                Icons.map,
-                color: SolidColors.themeColor,
-              ),
-              onTap: () {},
-            ),
-            ListTile(
-              title: const Align(
-                alignment: Alignment.centerRight,
-                child: Text('تماس با ما'),
-              ),
-              leading: const Icon(
-                Icons.call,
-                color: SolidColors.themeColor,
-              ),
-              onTap: () {},
-            ),
-            ListTile(
-              title: const Align(
-                alignment: Alignment.centerRight,
-                child: Text('واتساپ'),
-              ),
-              leading: const Icon(
-                Icons.whatsapp,
-                color: SolidColors.themeColor,
-              ),
-              onTap: () {},
-            ),
-            ListTile(
-              title: const Align(
-                alignment: Alignment.centerRight,
-                child: Text('درباره ما'),
-              ),
-              leading: const Icon(
-                Icons.info,
-                color: SolidColors.themeColor,
-              ),
-              onTap: () {},
-            ),
-            ListTile(
-              title: const Align(
-                alignment: Alignment.centerRight,
-                child: Text('خروج'),
-              ),
-              leading: const Icon(
-                Icons.exit_to_app,
-                color: SolidColors.themeColor,
-              ),
-              onTap: () {},
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
   Widget floatingActionButton() {
     return FloatingActionButton(
-      onPressed: () {},
+      onPressed: () {
+        Get.to(const RequestView());
+      },
       backgroundColor: SolidColors.themeColor,
       child: const Icon(Icons.add),
     );

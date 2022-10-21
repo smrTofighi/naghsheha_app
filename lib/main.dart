@@ -49,7 +49,7 @@ class NaghshehaApp extends StatelessWidget {
           ),
         ),
       ),
-      home: SplashView(),
+      home: const SplashView(),
     );
   }
 }

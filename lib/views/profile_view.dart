@@ -28,7 +28,7 @@ class ProfileView extends StatelessWidget {
             child: const Center(
               child: Text(
                 'م',
-                style: TextStyle(fontSize: 26),
+                style: TextStyle(fontSize: 26, color: Colors.white),
               ),
             ),
           ),
