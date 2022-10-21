@@ -9,6 +9,7 @@ import 'package:naghsheha_app/views/request_view.dart';
 
 import '../constant/components.dart';
 
+// ignore: must_be_immutable
 class MainView extends StatelessWidget {
   MainView({super.key});
   RxInt selectedIndex = 0.obs;
@@ -23,11 +24,11 @@ class MainView extends StatelessWidget {
       drawer: drawerApp(),
       body: Obx(
         () => IndexedStack(
+          index: selectedIndex.value,
           children: const [
             HomeView(),
             ProfileView(),
           ],
-          index: selectedIndex.value,
         ),
       ),
       floatingActionButton: floatingActionButton(),

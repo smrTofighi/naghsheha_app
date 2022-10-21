@@ -40,7 +40,7 @@ class RequestView extends StatelessWidget {
                   child: RadioListTile(
                     value: 1,
                     groupValue: 1,
-                    title: Text("مسکونی"),
+                    title: const Text("مسکونی"),
                     onChanged: (newValue) {},
                     activeColor: SolidColors.themeColor,
                     selected: false,
@@ -51,7 +51,7 @@ class RequestView extends StatelessWidget {
                   child: RadioListTile(
                     value: 0,
                     groupValue: 1,
-                    title: Text("تجاری"),
+                    title: const Text("تجاری"),
                     onChanged: (newValue) {},
                     activeColor: SolidColors.themeColor,
                     selected: false,

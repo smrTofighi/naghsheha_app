@@ -65,7 +65,7 @@ class HomeView extends StatelessWidget {
                 ),
                 SizedBox(
                   width: Get.width / 2.4,
-                  child: Text(
+                  child: const Text(
                     'این یک خبر است و جهت تست است و هیچ اعتباری ندارد',
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,

@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:naghsheha_app/views/main_view.dart';
-import 'package:naghsheha_app/views/signup_view.dart';
 import 'package:naghsheha_app/views/splash_view.dart';
 
 import 'constant/colors.dart';
 
 void main() {
-  runApp(NaghshehaApp());
+  runApp(const NaghshehaApp());
 }
 
 class NaghshehaApp extends StatelessWidget {

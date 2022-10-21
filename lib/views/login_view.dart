@@ -65,7 +65,7 @@ class LoginView extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(24, 12, 24, 12),
+                padding: const EdgeInsets.fromLTRB(24, 12, 24, 12),
                 child: SizedBox(
                   width: Get.width,
                   height: 55,
@@ -73,11 +73,11 @@ class LoginView extends StatelessWidget {
                     onPressed: () {
                       Get.offAll(MainView());
                     },
-                    child: Text('ورود'),
                     style: ButtonStyle(
                       backgroundColor:
                           MaterialStateProperty.all(SolidColors.themeColor),
                     ),
+                    child: const Text('ورود'),
                   ),
                 ),
               ),
@@ -87,7 +87,7 @@ class LoginView extends StatelessWidget {
                   const Text('حساب کاربری ندارید؟'),
                   TextButton(
                     onPressed: () {
-                      Get.to(SignupView());
+                      Get.to(const SignupView());
                     },
                     style: ButtonStyle(
                       foregroundColor:

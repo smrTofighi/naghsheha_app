@@ -79,7 +79,7 @@ class SignupView extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.fromLTRB(24, 12, 24, 12),
+                padding: const EdgeInsets.fromLTRB(24, 12, 24, 12),
                 child: SizedBox(
                   width: Get.width,
                   height: 55,
@@ -87,11 +87,11 @@ class SignupView extends StatelessWidget {
                     onPressed: () {
                       Get.offAll(MainView());
                     },
-                    child: Text('ثبت نام'),
                     style: ButtonStyle(
                       backgroundColor:
                           MaterialStateProperty.all(SolidColors.themeColor),
                     ),
+                    child: const Text('ثبت نام'),
                   ),
                 ),
               ),
@@ -101,7 +101,7 @@ class SignupView extends StatelessWidget {
                   const Text('حساب کاربری دارید؟'),
                   TextButton(
                     onPressed: () {
-                      Get.to(LoginView());
+                      Get.to(const LoginView());
                     },
                     style: ButtonStyle(
                       foregroundColor:
